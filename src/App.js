@@ -12,7 +12,7 @@ function App() {
     <div className="App">
 
       <Reviews>
-        <Carousel>
+        <Carousel className = 'slider-container'>
           <div>
             <p>"{reviews[0].text}"</p>
             <h3>{reviews[0].name}</h3>
@@ -62,11 +62,13 @@ const Reviews = styled.div `
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  color: white;
-  width: 50%;
-  @media (max-width: 425px) {
-    width: 100%;
+  align-items: center;
+  .slider-container {
+    color: white;
+    width: 50%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
   div {
     display: flex;
