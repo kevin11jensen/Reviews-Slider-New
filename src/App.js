@@ -62,17 +62,20 @@ const Reviews = styled.div `
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   color: white;
-  width: 100%;
+  width: 50%;
+  @media (max-width: 425px) {
+    width: 100%;
+  }
   div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 6%;
+    
     p {
-      width: 50%;
       text-align: left;
     }
   }
