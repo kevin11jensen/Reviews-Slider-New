@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import gsap from 'gsap';
+
 import './App.css';
 import { reviews } from './reviews';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
 
       <Reviews>
-        <Carousel className = 'slider-container'>
+        <Carousel className = 'slider-container' showThumbs = {false}>
           <div>
             <p>"{reviews[0].text}"</p>
             <h3>{reviews[0].name}</h3>
